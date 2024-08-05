@@ -54,7 +54,7 @@ jobs:
           aws-region: us-west-2 
 
       - name: Deploy to EC2
-        uses: appleboy/drone-ssh-action@v1
+        uses: appleboy/ssh-action@v0.1.9
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
