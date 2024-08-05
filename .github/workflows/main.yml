@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '11'
-          distribution: 'adopt-openjdk'
+          distribution: 'adoptium'
 
       - name: Test the Java files
         run: mvn test
